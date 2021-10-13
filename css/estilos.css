@@ -30,6 +30,11 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .cabecera__logo {
@@ -45,10 +50,11 @@ main {
 
 .seccion1 {
     min-height: 50vh;
-    background-image: url('../imagenes/patrocinadores.jpg');
+    background-image: url('../imagenes/fondo-patron-potrerodigital.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 
     display: flex;
     justify-content: center;
@@ -58,7 +64,7 @@ main {
 .seccion1__fondo {
     background-color: rgba(50, 50, 50, 0.8);
     color: #ffffff;
-    width: 500px;
+    max-width: 500px;
     text-align: center;
     padding: 16px;
     
@@ -71,12 +77,12 @@ main {
 /* Seccion 2 Index */
 
 .seccion2 {
-    background-image: linear-gradient(90deg, rgba(9,115,121,1) 25%, rgba(93,68,176,1) 63%);
+    background-image: linear-gradient(90deg, rgb(9, 17, 17) 25%, rgb(240, 236, 33) 63%);
     min-height: 100vh;
 
     display: flex;
     align-items: center;
-    padding: 100px;
+    padding: 32px;
 }
 
 .seccion2__contenido {
@@ -107,3 +113,72 @@ main {
     height: 300px;
     object-fit: cover;
 }
+
+
+
+/* Seccion 3 Estadisticas */
+
+.seccion3 {
+    /* background-color: yellow; */
+    padding: 32px;
+}
+
+.seccion3__titulo {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.cajas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caja {
+    /* background-color: #babbba; */
+    color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 2px solid #F0EC21;
+}
+
+.caja__cantidad {
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.caja__titulo {
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Seccion 4 */
+
+.seccion4 a{
+    background-color: #00ff62;
+    color: #000000;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+    color: #ffffff;
+    padding: 32px;
+}
+

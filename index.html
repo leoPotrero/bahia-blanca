@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Proyecto | Inicio</title>
     <!-- 3 forma de aplicar estilos CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <!-- Cabecera -->
@@ -31,17 +33,18 @@
         <!-- Seccion 1 -->
         <section class="seccion1">
             <div class="seccion1__fondo">
-                <h2 class="seccion1__subtitulo">Titulo de Seccion 1</h2>
-                <p class="seccion1__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta id, necessitatibus quidem reprehenderit rerum ullam dicta, asperiores odio eligendi vitae iure consequuntur. Sapiente rerum, voluptate itaque quae expedita eaque quisquam!</p>
+                <h2 class="seccion1__subtitulo">¿Qué es Potrero?</h2>
+                <p class="seccion1__parrafo">Potrero Digital es una red de centros de aprendizajes de oficios digitales orientada a la integración social.</p>
+                
             </div>
         </section>
 
         <!-- Seccion 2 -->
         <section class="seccion2">
             <div class="seccion2__contenido">
-                <h2 class="seccion2__subtitulo">Titulo o Subitulo</h2>
-                <p class="seccion2__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, repudiandae.</p>
-                <a class="seccion2__boton" href="">boton o enlace</a>
+                <h2 class="seccion2__subtitulo">Compromiso Digital</h2>
+                <p class="seccion2__parrafo">Compromiso Digital es una iniciativa de Fundación Compromiso que tiene por misión impulsar la trabajabilidad en los alumnos de Potrero Digital a través del acompañamiento de sus primeras contrataciones.</p>
+                <a class="seccion2__boton" href="https://www.compromiso.org/" target="_blank">compromiso.org</a>
             </div>
             <div class="seccion2__contenido">
                 <video class="seccion2__video" src="videos/video-muestra.mp4" controls autoplay loop></video>
@@ -49,23 +52,53 @@
         </section>
         
         <!-- Seccion 3 -->
-        <section>
-            <h2>Titulo de Seccion 3</h2>
+        <section class="seccion3">
+            
+            
+            <h2 class="seccion3__titulo">Estadisticas</h2>
+            
+
+            <div class="cajas">
+                <div class="caja">
+                    <span class="caja__cantidad">3090</span>
+                    <h3 class="caja__titulo">Personas participaron desde 2018</h3>
+                </div>
+                <div class="caja">
+                    <span  class="caja__cantidad">1300</span>
+                    <h3 class="caja__titulo">Estudiantes ya han sido certificados</h3>
+                </div>
+                <div class="caja">
+                    <span  class="caja__cantidad">500</span>
+                    <h3 class="caja__titulo">Graduados ya están trabajando</h3>
+                </div>
+                <div class="caja">
+                    <span  class="caja__cantidad">35</span>
+                    <h3 class="caja__titulo">Docentes y expertos en distintas áreas dictaron cursos</h3>
+                </div>
+            </div>
         </section>
 
-        <!-- Seccion 4 -->
-        <section>
-            <h2>Titulo de Seccion 4</h2>
+        <section class="seccion4">
+            <a href="https://api.whatsapp.com/send?phone=541155559999" target="_blank">Whatsapp</a>
         </section>
+
     </main>
 
     <!-- Pie de pagina -->
-    <footer>
+    <footer class="footer">
+        <span>Email: <a href="mailto:potrero@compromiso.org">potrero@compromiso.org</a></span>
         <div>
-            <a href="https://twitter.com/?lang=es" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com/?hl=es" target="_blank">Instagram</a>
-            <a href="https://es-la.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://twitter.com/?lang=es" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank">
+                Instagram
+            </a>
+            <a href="https://es-la.facebook.com/" target="_blank">
+                <img src="imagenes/facebook.svg" alt="Logotipo facebook">
+            </a>
         </div>
+        <img src="imagenes/compromiso.webp" alt="Logotipo Compromiso">
         <p>Derechos reservados 2021 - Potrero Digital</p>
     </footer>
 </body>
