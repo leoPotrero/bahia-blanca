@@ -19,7 +19,6 @@ html {
 }
 
 main {
-    padding-top: 80px;
     min-height: 100vh;
 }
 
@@ -51,6 +50,7 @@ main {
 /* Seccion 1 - Index */
 
 .seccion1 {
+    padding-top: 80px;
     min-height: 50vh;
     background-image: url('../imagenes/fondo-patron-potrerodigital.webp');
     background-repeat: no-repeat;
