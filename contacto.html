@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Proyecto | Contacto</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -24,20 +31,58 @@
     </header>
 
     <main>
-        <section>
-            <h2>Formulario de Contacto</h2>
-            <form action=""></form>
+        <section class="seccion-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Tipo de Consulta</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Seleccione tipo de consulta</option>
+                                    <option value="1">Ayuda</option>
+                                    <option value="2">Reclamo</option>
+                                    <option value="3">Compra</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                              <label for="Comentario" class="form-label">Comentario</label>
+                              <textarea class="form-control" name="comentario" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.26483387475!2d-58.503338712402304!3d-34.615803735965876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1635975779837!5m2!1ses!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Pie de pagina -->
-    <footer>
+    <footer class="footer">
+        <span>Email: <a href="mailto:potrero@compromiso.org">potrero@compromiso.org</a></span>
         <div>
-            <a href="">Twitter</a>
-            <a href="">Instagram</a>
-            <a href="">Facebook</a>
+            <a href="https://twitter.com/?lang=es" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank">
+                Instagram
+            </a>
+            <a href="https://es-la.facebook.com/" target="_blank">
+                <img src="imagenes/facebook.svg" alt="Logotipo facebook">
+            </a>
         </div>
+        <img src="imagenes/compromiso.webp" alt="Logotipo Compromiso">
         <p>Derechos reservados 2021 - Potrero Digital</p>
     </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
